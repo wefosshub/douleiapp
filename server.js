@@ -9,6 +9,7 @@ const uri = `mongodb+srv://fawazsullia:kenkaneki13@cluster0.pvzfr.mongodb.net/my
 
 //import routes
 const submitJobRoute = require('./routes/submitJob.js')
+const jobListRoute = require('./routes/getJobList')
 
 //middlewares
 app.use(cors())
@@ -16,6 +17,7 @@ app.use(express.json())
 
 //route middlewares
 app.use('/submit-job', submitJobRoute);
+app.use('/listing', jobListRoute);
 
 
 

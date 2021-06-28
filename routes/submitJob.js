@@ -12,14 +12,19 @@ const jobDetails = new submitJobModel({
     job_description: req.body.job_description,
     skills : req.body.skills,
     apply_link : req.body.apply_link,
-    created_date : Date()
+    created_date : Date(),
+    salary_per_year_dollars : req.body.salary_per_year_dollars
 
 
 });
+try{
 
 await jobDetails.save();
 res.status(200).json({message: "Submission successful", submitted : true}).end()
-    
+}
+catch(err){
+    res.status(500).json({message : "Could not save submission", submitted : false }).end()
+}  
 
 
     

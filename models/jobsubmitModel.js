@@ -10,7 +10,8 @@ job_title : String,
 job_description: String,
 skills : [String],
 apply_link : String,
-created_date : Date
+created_date : Date,
+salary_per_year_dollars : Number 
 
 })
 
