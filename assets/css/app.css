@@ -1,0 +1,32 @@
+header {
+    padding: 50px;
+    background-image: url(../images/h1_hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+  }
+  header h1 {
+    margin-top: 100px;
+    font-size: 5rem;
+  }
+  header h2 {
+    margin-top: 30px;
+    font-size: 1.2rem;
+  }
+  header form {
+    margin-top: 100px;
+    max-width: 400px;
+  }
+  .card {
+    margin: 25px 0;
+  }
+  .loading-element {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    display: none;
+  }
+  .loading-element.loading {
+    display: block;
+  }
+  

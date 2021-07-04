@@ -1,0 +1,18 @@
+{
+  "name": "front-end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node ./node_modules/parcel/lib/cli index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "varun singh",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.0.0-beta.2"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.0-beta.2"
+  }
+}
